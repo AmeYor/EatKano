@@ -2,8 +2,8 @@
 <html lang="zh">
 
 <head>
-  <title>吃掉小鹿乃-排行榜</title>
-  <meta item="description" content="来看神仙" />
+  <title>吃掉源石虫-排行榜</title>
+  <meta item="description" content="来看别人家的博士" />
   <meta charset="utf-8" />
   <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -60,7 +60,7 @@
         echo "<a href='#' class='list-group-item list-group-item-action'><div class='d-flex w-100 justify-content-between'>
             <h5 class='mb-1'>" . $rank . "位   " . $name . "</h5><small>" . $time . "</small></div>
             <p class='mb-1'>SCORE: " . $score . " TRY: " . $attempts . " -" . $system . " -" . $area . "</p>
-            <small>" . ($message ? $message : "这个人很懒什么也没留下") . "</small></a>";
+            <small>" . ($message ? $message : "这个人很懒，除了涩涩的想法外什么也没留下") . "</small></a>";
       }
       $data_stmt->close();
     }
