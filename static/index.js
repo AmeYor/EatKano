@@ -178,7 +178,7 @@ const MODE_NORMAL = 1, MODE_ENDLESS = 2, MODE_PRACTICE = 3;
         _gameTimeNum--;
         _gameStartTime++;
         if (mode === MODE_NORMAL && _gameTimeNum <= 0) {
-            GameTimeLayer.innerHTML = '&nbsp;&nbsp;&nbsp;&nbsp;时间到！';
+            GameTimeLayer.innerHTML = '&nbsp;&nbsp;&nbsp;&nbsp;作战完成！';
             gameOver();
             GameLayerBG.className += ' flash';
             createjs.Sound.play("end");
@@ -441,11 +441,11 @@ const MODE_NORMAL = 1, MODE_ENDLESS = 2, MODE_PRACTICE = 3;
             SubmitResults();
         }
 
-        if (cps <= 5) return '试着好好练一下？';
-        if (cps <= 8) return 'TCL';
-        if (cps <= 10)  return 'TQL';
-        if (cps <= 15) return '您';
-        return '人？';
+        if (cps <= 5) return '博士，你怎么又晕过去了';
+        if (cps <= 8) return '别人家的博士都过危机31了';
+        if (cps <= 10)  return '博士，你剿灭奖励都还没拿完';
+        if (cps <= 15) return '博士，还不能休息哦';
+        return '巴别塔的饿灵？';
     }
 
     function toStr(obj) {
